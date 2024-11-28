@@ -25,12 +25,7 @@ fun lazy_fib (1) = Cons(1, fn() => Nil) |
         in 
             Cons( n + prev_val, fn () => Cons(prev_val, tail)  )
         end;
-
-
-
-
-
-
+    
 
 fun lazy_fact_steps_with_results 0 = Cons (1, fn () => Nil)
   | lazy_fact_steps_with_results n = 
